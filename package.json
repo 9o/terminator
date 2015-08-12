@@ -1,0 +1,37 @@
+{
+  "name": "terminator",
+  "productName": "Terminator",
+  "version": "0.0.0",
+  "description": "My gnarly app",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "repository": "9o/terminator",
+  "author": {
+    "name": "Henry Boldizsar",
+    "email": "henrymb67@gmail.com",
+    "url": "terminatorapp.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . $npm_package_productName --out=dist --ignore=dist --prune --asar --all --version=0.30.0"
+  },
+  "files": [
+    "index.js",
+    "index.html",
+    "index.css"
+  ],
+  "keywords": [
+    "electron-app"
+  ],
+  "dependencies": {
+    "electron-debug": "^0.1.1",
+    "jquery": "^2.1.4"
+  },
+  "devDependencies": {
+    "electron-packager": "^5.0.0",
+    "electron-prebuilt": "^0.30.0"
+  }
+}

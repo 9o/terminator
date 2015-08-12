@@ -1,0 +1,31 @@
+html {
+  font-family: monaco, monospace; }
+
+input:focus {
+  outline: none; }
+
+#stdout {
+  white-space: pre-wrap; }
+
+#stdin {
+  display: inline-block; }
+  #stdin input[type="submit"] {
+    visibility: hidden; }
+  #stdin input[type="text"] {
+    background: none;
+    border: none;
+    color: #c0c7c7;
+    font-family: monaco, monospace;
+    font-size: 16px; }
+
+body {
+  background: black;
+  color: #c0c7c7; }
+
+#main {
+  padding: 5px;
+  color: #c0c7c7; }
+  #main .fore {
+    color: #ff6c6b; }
+  #main .accent {
+    color: #00b5c3; }

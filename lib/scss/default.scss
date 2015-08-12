@@ -1,0 +1,48 @@
+$black: #000;
+$red: #ff6c6b;
+$accent:#00b5c3;
+$lt-text: #c0c7c7;
+$title: #383838;
+$redCircle: #f04341;
+$greenCircle:#96cf7d;
+$yellowCircle:#f5b868;
+
+html {
+  font-family:monaco, monospace;
+}
+
+input:focus { outline: none; }
+
+#stdout {
+  white-space: pre-wrap;
+}
+
+#stdin {
+  display: inline-block;
+  input[type="submit"] {
+    visibility: hidden;
+  }
+  input[type="text"] {
+    background: none;
+    border: none;
+    color: $lt-text;
+    font-family:monaco, monospace;
+    font-size: 16px;
+  }
+}
+
+body {
+  background:$black;
+  color: $lt-text;
+}
+
+#main{
+  padding:5px;
+  color: $lt-text;
+  .fore{
+   color: $red;
+  }
+  .accent{
+   color: $accent;
+  }
+}
