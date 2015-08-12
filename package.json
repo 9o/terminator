@@ -28,10 +28,12 @@
   ],
   "dependencies": {
     "electron-debug": "^0.1.1",
-    "jquery": "^2.1.4"
+    "jquery": "^2.1.4",
+    "pty.js": "chjj/pty.js"
   },
   "devDependencies": {
     "electron-packager": "^5.0.0",
-    "electron-prebuilt": "^0.30.0"
+    "electron-prebuilt": "^0.30.0",
+    "electron-rebuild": "^0.2.5"
   }
 }
