@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "description": "My gnarly app",
   "license": "MIT",
-  "main": "./lib/index.js",
+  "main": "./static/index.js",
   "repository": "9o/terminator",
   "author": {
     "name": "Henry Boldizsar",
@@ -29,6 +29,7 @@
   "dependencies": {
     "electron-debug": "^0.1.1",
     "jquery": "^2.1.4",
+    "lodash": "^3.10.1",
     "pty.js": "chjj/pty.js"
   },
   "devDependencies": {
