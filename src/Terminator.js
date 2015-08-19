@@ -1,18 +1,13 @@
 'use strict';
 
 const pty = require('pty.js');
-const object = require('lodash/object');
+const Keymap = require('./Keymap');
 
-class Terminator {
-  constructor() {
-
-  }
-
-  example() {
-
+class Terminator extends pty {
+  initKeymap() {
+    new Keymap;
+    return true;
   }
 };
-
-Terminator = object.merge(Terminator, pty);
 
 module.exports = Terminator;

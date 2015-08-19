@@ -1,22 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>index</title>
-		<link rel="stylesheet" href="./css/default.css">
-	</head>
-	<body>
-		<div id="main">
-			<div id="stdout"></div>
-			<div id="stdin">
-				<span id="working-directory"></span><span id="active-user"></span><span class="accent">$</span>
-				<form action="#">
-					<input type="text" name="stdin">
-					<input type="submit">
-				</form>
-			</div>
-		</div>
-		<div id="endOfPage"></div>
-		<script src="../lib/app.js"></script>
-	</body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="./css/bundle.css">
+  <link rel="stylesheet" href="../node_modules/highlight.js/styles/railscasts.css">
+</head>
+<body>
+  <!--[if lt IE 8]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <div id="content">
+    <!-- <h1>If you can see this, something is broken (or JS is not enabled)!!.</h1> -->
+  </div>
+
+  <!-- <script>
+    __REACT_DEVTOOLS_GLOBAL_HOOK__ = parent.__REACT_DEVTOOLS_GLOBAL_HOOK__
+  </script>
+  <script type="text/javascript" src="main.js"></script> -->
+  <script src="../node_modules/highlight.js/lib/highlight.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script src="../node_modules/mousetrap/mousetrap.min.js"></script>
+  <script>
+    // install babel hooks in the renderer process
+    require('babel/register');
+    require('../src/components/TerminatorApp.js');
+  </script>
+</body>
 </html>

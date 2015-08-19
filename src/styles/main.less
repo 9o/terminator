@@ -1,0 +1,59 @@
+@import 'utils/variables';
+
+/* Stiziles */
+
+html, body {
+  background: @black;
+}
+
+/* main */
+
+.main {
+  width: 100%;
+  height: 100%;
+  background: @black;
+  color: #fff;
+}
+
+.main img {
+  width: 103px;
+  height: 89px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* transitions */
+
+.fade-enter {
+  opacity: 0.01;
+  transition: opacity .5s ease-in;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+}
+
+.fade-leave {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 0.01;
+}
+
+html {
+  font-family: "source_code_proregular", monaco, monospace;
+  color: @lt-text;
+}
+
+input {
+  font-family: "source_code_proregular", monaco, monospace;
+}
+
+input:focus { outline: none; }
+
+body {
+  background:@black;
+  color: @lt-text;
+}

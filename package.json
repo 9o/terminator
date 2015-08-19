@@ -1,40 +1,37 @@
 {
   "name": "terminator",
-  "productName": "Terminator",
   "version": "0.0.0",
-  "description": "My gnarly app",
-  "license": "MIT",
+  "description": "",
+  "repository": "",
+  "private": true,
+  "src": "src",
+  "test": "test",
+  "dist": "dist",
+  "mainInput": "TerminatorApp",
+  "mainOutput": "main",
   "main": "./static/index.js",
-  "repository": "9o/terminator",
-  "author": {
-    "name": "Henry Boldizsar",
-    "email": "henrymb67@gmail.com",
-    "url": "terminatorapp.com"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
   "scripts": {
-    "start": "electron .",
+    "start": "webpack && electron .",
     "build": "electron-packager . $npm_package_productName --out=dist --ignore=dist --prune --asar --all --version=0.30.0"
   },
-  "files": [
-    "index.js",
-    "index.html",
-    "index.css"
-  ],
-  "keywords": [
-    "electron-app"
-  ],
   "dependencies": {
     "electron-debug": "^0.1.1",
+    "highlight.js": "^8.7.0",
     "jquery": "^2.1.4",
-    "lodash": "^3.10.1",
-    "pty.js": "chjj/pty.js"
+    "mousetrap": "^1.5.3",
+    "pty.js": "chjj/pty.js",
+    "react": "0.13.x",
+    "react-highlight": "^0.5.0",
+    "run-sequence": "^1.1.2"
   },
   "devDependencies": {
+    "babel": "^5.0.0",
+    "babel-loader": "^5.0.0",
+    "css-loader": "~0.9.0",
     "electron-packager": "^5.0.0",
     "electron-prebuilt": "^0.30.0",
-    "electron-rebuild": "^0.2.5"
+    "electron-rebuild": "^0.2.5",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-less": "^3.0.3"
   }
 }

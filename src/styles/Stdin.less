@@ -1,0 +1,31 @@
+@import 'utils/variables';
+
+#stdin {
+  padding: 12px 20px;
+  display: inline-block;
+  position: fixed;
+  background-color: @black;
+  bottom: 45px;
+  left: 0px;
+  right: 0px;
+  .arrow-right {
+    display: inline-block;
+  	width: 0;
+  	height: 0;
+  	border-top: 7px solid transparent;
+  	border-bottom: 7px solid transparent;
+  	border-left: 7px solid #B0B0B0;
+  }
+  form {
+    display: inline-block;
+  }
+  input[type="submit"] {
+    visibility: hidden;
+  }
+  input[type="text"] {
+    background: none;
+    border: none;
+    color: @near-white;
+    font-size: 16px;
+  }
+}
