@@ -6,7 +6,7 @@ var Highlight = require('react-highlight');
 var Stdout = React.createClass({
   render: function() {
     return (
-      <Highlight id="stdout" className='bash'>
+      <Highlight id="stdout" className='shell'>
         {this.props.stdout}
       </Highlight>
       );

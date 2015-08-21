@@ -1,7 +1,5 @@
 'use strict';
 
-var ModifyCaret = require('./ModifyCaret');
-
 class Keymap {
 
   constructor() {
